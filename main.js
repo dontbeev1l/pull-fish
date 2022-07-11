@@ -1,36 +1,3 @@
-const S = Storage.create(
-    {
-        balance: 500,
-        bet: 10,
-        history: [],
-        hungry: 100
-    },
-    {
-        bet: (value, _s) => {
-            let html = '';
-
-            if (_s.balance < 10) {
-                _s.balance = 100;
-            }
-
-            if (value > _s.balance) {
-                value = Math.floor(S.balance / 10) * 10;
-                _s.bet = Math.floor(S.balance / 10) * 10;
-            }
-
-            if (value < 10) {
-                _s.bet = 10;
-                value = 10;
-            }
-
-            for (let i = 1; i <= 8; i++) {
-                html += `<div class="info"><img src="./img/f${i}.png">${(i + 1) * 0.5 * value}</div>`;
-            }
-
-            q('.fish-bet-grid').setHTML(html)
-        }
-    }
-);
 
 
 function msg(text) {
@@ -184,7 +151,7 @@ class Home {
     cahngeHungry(value) {
         let hungry = S.hungry + value;
 
-        if (hungry < 0) { 
+        if (hungry < 0) {
             hungry = 0;
         }
 

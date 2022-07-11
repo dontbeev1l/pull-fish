@@ -160,6 +160,8 @@
             <div></div>
             <div></div>
         </button>
+        <button class="player" id="playEl" onclick="play()">Music: Off</button>
+        <button class="player" id="pauseEl" onclick="pause()">Music: On</button>
         <div class="balance river__balance anim-top">
             <img src="./img/coin.png" alt="coin">
             <span data-bind="balance">
@@ -249,6 +251,8 @@
             <div class="hungry__value hungry__value_green"></div>
         </div>
     </div>
+
+    <audio src="./music.mp3" id="audioEl"></audio>
 </body>
 
 <script src="./modules/modules.js"></script>

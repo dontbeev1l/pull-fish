@@ -626,3 +626,16 @@ button:active {
 .hungry__value_green {
     background: rgba(0, 255, 71, 1);
 }
+
+.player {
+    position: fixed;
+    left: 64px;
+    top: -50px;
+    transition: top 300ms ease, transform 300ms ease!important;
+    font-size: 14px;
+    font-family: 'Ink Free';
+}
+
+.view_active .player {
+    top: 12px;
+}
