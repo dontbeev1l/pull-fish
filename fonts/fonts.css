@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Ink Free';
+    src: url('./inkfree.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Thai Looped';
+    font-weight: 400;
+    src: url('./IBMPlexSansThaiLooped-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Thai Looped';
+    font-weight: 700;
+    src: url('./IBMPlexSansThaiLooped-Bold.ttf');
+}

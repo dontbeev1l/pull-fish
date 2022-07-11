@@ -1,0 +1,22 @@
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.anim-top {
+    transition: bottom 300ms ease;
+}
+
+.anim-bottom {
+    transition: top 300ms ease;
+}
+
+.anim-left {
+    transition: right 300ms ease;
+}
+
+.anim-right {
+    transition: left 300ms ease;
+}
