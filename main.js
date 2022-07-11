@@ -118,6 +118,10 @@ class Home {
             this.cahngeHungry(-1);
         }, 5000);
         this.drowHungry();
+
+        homeView.onActivate = () => {
+            this.showLastCatch();
+        }
     }
 
     showLastCatch() {

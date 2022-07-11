@@ -24,15 +24,18 @@ class View {
         this.name = name;
         this.activateFn = activateFn || nope;
         this.deactivateFn = deactivateFn || nope;
+        this.onActivate = nope;
     }
 
     activate() {
         document.querySelector(`.view_${this.name}`).classList.add('view_active');
         this.activateFn();
+        this.onActivate();
     }
 
     deactivate() {
         document.querySelector(`.view_${this.name}`).classList.remove('view_active');
         this.deactivateFn();
     }
+
 }
